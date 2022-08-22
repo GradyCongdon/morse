@@ -47,8 +47,18 @@ const moss = {
   dot: "#354f52",
   dash: "#2f3e46",
 };
+
+const cmyk = {
+  bg: "#000000",
+  border: "#ffffff",
+  text: "#FFFF00",
+  dot: "#00FFFF",
+  dash: "#FF00FF",
+};
+
 export const palettes: Record<string, Palette> = {
   rgb: rgb,
+  cmyk: cmyk,
   fructose: fructose,
   plains: plains,
   candy: candy,

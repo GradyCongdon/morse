@@ -2,12 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { hexToHSL } from "./colors";
-import { defaultsDeep } from "lodash";
-import styles from "../styles/Home.module.scss";
-import { getNamedRouteRegex } from "next/dist/shared/lib/router/utils/route-regex";
-import { moveMessagePortToContext } from "worker_threads";
 import { palettes } from "./Palette";
 import { getLocalStorageState } from "./getLocalStorageState";
+
+import styles from "../styles/Home.module.scss";
 
 type Knot = Record<string, string>;
 
