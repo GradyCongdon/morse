@@ -34,9 +34,9 @@ export const hexToHSL = (H: string) => {
 
   l = (cmax + cmin) / 2;
   s = delta == 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
-  s = +(s * 100).toFixed(1);
-  l = +(l * 100).toFixed(1);
+  s = +(s * 100).toFixed(0);
+  l = +(l * 100).toFixed(0);
 
-  return `${h}deg ${s}% ${l}%`;
+  return `${h} ${s}% ${33}%`;
   // return "hsl(" + h + "," + s + "%," + l + "%)";
 };
